@@ -1,0 +1,23 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "svgwidth": 1368,
+    "svgheight": 798,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0226,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M26 336 L497 336 L497 64 L26 336 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="497" y1="336" x2="379" y2="132" style="stroke:black;stroke-width:1" />
+    <line x1="379" y1="132" x2="262" y2="336" style="stroke:black;stroke-width:1" />
+    <line x1="262" y1="336" x2="144" y2="268" style="stroke:black;stroke-width:1" />
+    <line x1="144" y1="268" x2="104" y2="336" style="stroke:black;stroke-width:1" />
+    <line x1="104" y1="336" x2="65" y2="313" style="stroke:black;stroke-width:1" />
+</svg>

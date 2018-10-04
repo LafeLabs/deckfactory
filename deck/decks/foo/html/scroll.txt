@@ -1,0 +1,11 @@
+<h1>foo</h1>
+
+<figure>
+    <img src = "images/image0.svg"/>
+<figcaption></figcaption>
+</figure>
+
+<figure>
+    <img src = "images/image1.svg"/>
+<figcaption></figcaption>
+</figure>

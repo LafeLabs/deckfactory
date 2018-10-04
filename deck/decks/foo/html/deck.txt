@@ -1,0 +1,12 @@
+
+<div class = "slide">
+    
+<h1></h1>
+<img src = "images/image0.svg"/>
+</div>
+
+<div class = "slide">
+    
+<h1></h1>
+<img src = "images/image1.svg"/>
+</div>
