@@ -32,16 +32,23 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <META NAME="robots" CONTENT="noindex,nofollow">
     </head>
     <body>
-        <a href ="editor.php">editor.php</a>
+            <a href = "../image2deck/">
+                <img src = "../factory_symbols/combiner.svg" style = "width:80px"/>
+            </a>
+        <a href ="editor.php">
+            <img src = "../factory_symbols/editor.svg" style = "width:80px"/>
+            </a>
         <br>
-        <a href  ="../">../</a>
-        <h1>Scrolls</h1>
+        <a href  ="../">            
+            <img src = "../factory_symbols/factory.svg" style = "width:80px"/>
+        </a>
+        <h1>Decks</h1>
     <?php
-    $files = scandir(getcwd()."/scrolls");
+    $files = scandir(getcwd()."/decks");
     echo "<ul>";
     foreach($files as $filename){
         if($filename != "." && $filename != ".."){
-           echo  "\n<li><a href = \"scrolls/".$filename."/\">".$filename."/</a></li>\n";
+           echo  "\n<li><a href = \"decks/".$filename."/\">".$filename."/</a></li>\n";
         }
     }
     echo "</ul>";

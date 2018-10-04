@@ -1,25 +1,37 @@
 <p>
-    <a href = "editor.php">editor.php</a>
+        <a href = "copy.php"><img style = "height:80px" src = "factory_symbols/copy.svg"/></a>
+</p>
+<p>
+    <a href = "editor.php"><img style = "width:80px" src = "factory_symbols/editor.svg"/></a>
 </p>
 
-<ul>
-    <li>
-        <a href = "images/"><img style = "width:80px" src = "factory_symbols/images.svg"/></a>
-    </li>
-    <li>
-        <a href = "symbol/"><img style = "width:80px" src = "factory_symbols/symbol.svg"/></a>
-    </li>
-    <li>
-        <a href = "curve/">curve/</a>
-    </li>
-    <li>
-        <a href = "image2deck/">
-            <img style = "width:80px" src = "factory_symbols/combiner.svg"/>
+<table>
+    <tr>
+        <td>
+            <a href = "images/"><img style = "width:80px" src = "factory_symbols/images.svg"/></a>            
+        </td>
+        <td>
+            <a href = "symbol/"><img style = "width:80px" src = "factory_symbols/symbol.svg"/></a>            
+        </td>
+        <td>
+            <a href = "curve/"><img style = "width:80px" src = "factory_symbols/curve.svg"></a>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <a href = "image2deck/"><img style = "width:80px" src = "factory_symbols/combiner.svg"/>
             </a>
-    </li>
-    <li>
-        <a href = "scroll/">
-        <img style = "width:80px" src = "factory_symbols/scroll.svg"/>    
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+                <a href = "deck/">
+        <img style = "width:80px" src = "factory_symbols/deck.svg"/>    
         </a>
-    </li>
-</ul>
+        </td>
+        <td></td>
+    </tr>
+</table>

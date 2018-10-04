@@ -1,0 +1,18 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "svgwidth": 1368,
+    "svgheight": 798,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0226,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M150 350 L150 250 L150 150 M150 150           A100 100 0 0 1 250 50L350 50 M350 50           A100 100 0 0 1 450 150L450 250 L450 350 M450 350           A100 100 0 0 1 350 450L250 450 M249.99999999999997 450           A100 100 0 0 1 149.99999999999997 350Z" stroke = "black" stroke-width = "1" fill = "none" /></svg>

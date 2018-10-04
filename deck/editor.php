@@ -14,10 +14,8 @@
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
-    <div class = "html file">html/scroll.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/deckeditor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
@@ -36,7 +34,7 @@
 
 
 
-currentFile = "php/scrolleditor.txt";
+currentFile = "php/deckeditor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

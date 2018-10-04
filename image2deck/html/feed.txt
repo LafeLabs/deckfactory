@@ -1,7 +1,10 @@
 <table id = "linktable">
     <tr>
         <td>
-            <a href = "../curve/">CURVE</a>
+            <a href = "../deck/"><img style = "width:80px" src = "../factory_symbols/deck.svg"/></a>
+        </td>
+        <td>
+            <a href = "../curve/"><img style = "width:80px" src = "../factory_symbols/curve.svg"/></a>
         </td>
         <td>
             <a href = "../symbol/"><img style = "width:80px" src = "../factory_symbols/symbol.svg"/></a>
@@ -121,7 +124,7 @@ document.getElementById("publishbutton").onclick = function(){
         
         newa = document.createElement("a");
         newa.innerHTML = currentFile;
-        newa.href =  "../deck/decks/" + currentFile + "/scrolleditor.php";
+        newa.href =  "../deck/decks/" + currentFile + "/deckeditor.php";
         document.getElementById("pagelink").appendChild(newa);
     }
     else{

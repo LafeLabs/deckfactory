@@ -1,18 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Scroll Reader</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-   <script>
-	MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']],
-		processEscapes: true,
-		processClass: "mathjax",
-        ignoreClass: "no-mathjax"
-		}
-	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-</script>
+        <title>Deck Reader</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
@@ -30,90 +19,112 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
-    </head>
-    <body>
-</div>
-        <a id = "editorlink" href = "../../">SCROLLS LIST</a>
-        <a id = "scrolleditorlink" href = "scrolleditor.php">EDIT</a>
-        <div id = "readerscroll" class = "scroll">
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+</head>
+<body>
+<a id = "editorlink" href = "deckeditor.php">
+                <img src = "../../../factory_symbols/editor.svg" style = "width:50px"/>
+</a>
+<div id = "deckdatadiv" style = "display:none">
         <?php
-
             if(isset($_GET['url'])){
                 echo file_get_contents($_GET['url']);
             }
             else{
-                echo file_get_contents("html/scroll.txt");
+                echo file_get_contents("html/deck.txt");
             }
         ?>
-        </div>
+</div>
+<div id = "topscreen">
+    <h1 id = "maintitle"></h1>
+    <img id = "mainimage"/>
+</div>
+<script>
+mainimage = document.getElementById("mainimage");
+maintitle = document.getElementById("maintitle");
 
-        <style>
-            * {
-            box-sizing: border-box;
-            }
-            body{
-             overflow:hidden;   
-            }
-            .scroll{
-                width:100%;
-                padding:2em 2em 2em 2em;
-                font-size:2em;
-                text-align:justify;
-                overflow:scroll;
-                position:absolute;
-                top:3em;
-                left:0px;
-                right:0px;
-                bottom:0px;
-            }
-            .scroll img{
-                width:80%;
-                display:block;
-                margin:auto;
-            }
-            .scroll p,pre,li {
-	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
-	            font-size: 24px;
-            	font-style: normal;
-	            font-variant: normal;
-	            font-weight: 400;
-	            line-height: 32px;
-	            width:100%;
-	            text-align:justify;
-	                margin-bottom:1em;
+slides = document.getElementById("deckdatadiv").getElementsByClassName("slide");
+slideIndex = 0;
 
-            }
-            .scroll h1,h2,h3,h4{
-                text-align:center;
-            }
-            .scroll table{
-                text-align:center;
-                border-collapse:collapse;
-                margin:auto;
-                width:auto;
+redraw();
 
-            }
-            .scroll td{
-                border:solid;
-            }
-            a{
-                	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
-	            font-size: 24px;
-            	font-style: normal;
-	            font-variant: normal;
-	            font-weight: 400;
+function redraw(){
+    mainimage.src = slides[slideIndex].getElementsByTagName("IMG")[0].src;
+    maintitle.innerHTML = slides[slideIndex].getElementsByTagName("H1")[0].innerHTML;
+}
+function nextslide(){
+    slideIndex++;
+    if(slideIndex > slides.length - 1){
+        slideIndex = 0;
+    }
+    redraw();
+}
+function prevslide(){
+    slideIndex--;
+    if(slideIndex < 0){
+        slideIndex = slides.length - 1;
+    }
+    redraw();
+}
+document.getElementById("topscreen").onclick = function(){
+    nextslide();
+}
+mainimage.onload = function(){
+    if(this.width < innerWidth){
+        this.style.left = (0.5*(innerWidth - this.width)).toString() + "px";
+    }
+    else{
+        this.style.left = "0px";
+        this.style.width = innerWidth;
+    }
+}
 
-            }
-           #editorlink{
-               position:absolute;
-               right:10%;
-               top:0.5em;
-           }
-           #scrolleditorlink{
-               position:absolute;
-               left:10%;
-               top:0.5em;
-           }
-        </style>
-    </body>
+
+document.getElementById("topscreen");
+mc = new Hammer(document.getElementById("topscreen"));
+mc.on("swipeleft swiperight", function(ev) {
+    if(ev.type == "swipeleft"){
+        prevslide();
+    }
+    if(ev.type == "swiperight"){
+        nextslide();
+    }
+});        
+    
+</script>
+
+<style>
+h1{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    font-family:Helvetica;
+    z-index:0;
+    top:15%;
+    left:0px;
+    overflow:hidden;
+}
+#mainimage{
+    position:absolute;
+    z-index:-1;
+    top:0px;
+    overflow:hidden;
+    height:100%;
+}
+#topscreen{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    z-index:1;
+}
+#editorlink{
+    position:absolute;
+    z-index:2;
+    left:0px;
+    top:0px;
+}
+</style>
+</body>
 </html>

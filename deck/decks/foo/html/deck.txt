@@ -1,12 +1,19 @@
 
-<div class = "slide">
-    
-<h1></h1>
-<img src = "images/image0.svg"/>
-</div>
 
-<div class = "slide">
+<div class="slide">
     
-<h1></h1>
-<img src = "images/image1.svg"/>
-</div>
+<h1>one</h1>
+<img src="images/image0.svg">
+<input></div>
+
+<div class="slide">
+    
+<h1>two</h1>
+<img src="images/image1.svg">
+<input></div>
+
+<div class="slide">
+    
+<h1>three</h1>
+<img src="images/image2.svg">
+<input></div>

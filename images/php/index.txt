@@ -33,7 +33,7 @@ echo $listtext;
     <a href = "editor.php"><img style = "width:80px" src = "../factory_symbols/editor.svg"/></a>
         </td>
         <td>
-        <a href = "../image2scroll/"><img style = "width:80px" src = "../factory_symbols/combiner.svg"/></a>
+        <a href = "../image2deck/"><img style = "width:80px" src = "../factory_symbols/combiner.svg"/></a>
         </td>
     </tr>
 </table>

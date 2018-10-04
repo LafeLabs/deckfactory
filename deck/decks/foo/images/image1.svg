@@ -15,15 +15,9 @@
 }
 </json>
 -->
-	<path d = "M7 396 L7 104 L481 104 L481 396 L7 396 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M300 396 L300 104 L7 104 L7 396 L300 396 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M7.1799999999997794 396.4100000000001           A292.82000000000016 292.82000000000016 0 0 1 299.99999999999994 103.58999999999997" fill = "none" stroke = "black" stroke-width = "6" />
-  <path d="M299.99999999999994 103.58999999999997           A180.97271258574432 180.97271258574432 0 0 1 480.97271258574426 284.5627125857443" fill = "none" stroke = "black" stroke-width = "6" />
-    <line x1="300" y1="285" x2="481" y2="285" style="stroke:black;stroke-width:6" />
-  <path d="M480.97271258574426 284.5627125857443           A111.84728741425586 111.84728741425586 0 0 1 369.1254251714884 396.41000000000014" fill = "none" stroke = "black" stroke-width = "6" />
-    <line x1="369" y1="285" x2="369" y2="396" style="stroke:black;stroke-width:6" />
-  <path d="M369.1254251714884 396.41000000000014           A69.12542517148846 69.12542517148846 0 0 1 299.99999999999994 327.28457482851167" fill = "none" stroke = "black" stroke-width = "6" />
-    <line x1="369" y1="327" x2="300" y2="327" style="stroke:black;stroke-width:6" />
-  <path d="M299.99999999999994 327.28457482851167           A42.72186224276739 42.72186224276739 0 0 1 342.7218622427673 284.5627125857443" fill = "none" stroke = "black" stroke-width = "6" />
-    <line x1="343" y1="327" x2="343" y2="285" style="stroke:black;stroke-width:6" />
-  <path d="M342.7218622427673 284.5627125857443           A26.40356292872106 26.40356292872106 0 0 1 369.12542517148836 310.96627551446534" fill = "none" stroke = "black" stroke-width = "6" />
-    <line x1="343" y1="311" x2="369" y2="311" style="stroke:black;stroke-width:6" />
+	<path d = "M26 336 L497 336 L497 64 L26 336 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="497" y1="336" x2="379" y2="132" style="stroke:black;stroke-width:1" />
+    <line x1="379" y1="132" x2="262" y2="336" style="stroke:black;stroke-width:1" />
+    <line x1="262" y1="336" x2="144" y2="268" style="stroke:black;stroke-width:1" />
+    <line x1="144" y1="268" x2="104" y2="336" style="stroke:black;stroke-width:1" />
+    <line x1="104" y1="336" x2="65" y2="313" style="stroke:black;stroke-width:1" />
 </svg>

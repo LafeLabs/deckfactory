@@ -19,7 +19,7 @@
         mkdir("../deck/decks/".$filename."/html");
         
         copy("../deck/php/indextemplate.txt","../deck/decks/".$filename."/index.php");    
-        copy("../deck/deckeditor.php","../deck/decks/".$filename."/scrolleditor.php");    
+        copy("../deck/deckeditor.php","../deck/decks/".$filename."/deckeditor.php");    
         copy("../deck/filesaver.php","../deck/decks/".$filename."/filesaver.php");    
         copy("../deck/fileloader.php","../deck/decks/".$filename."/fileloader.php");    
     $decktext = "";
